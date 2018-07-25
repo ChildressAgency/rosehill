@@ -313,6 +313,21 @@ main .contact-info{
   margin-bottom:0;
 }
 
+.faq{
+  margin-bottom:25px;
+}
+.faq h4{
+  margin-top:0;
+  margin-bottom:0;
+  font-weight:700;
+}
+.faq h4:before{
+  content:"Q: ";
+}
+.faq p:before{
+  content:"A: ";
+}
+
 #footer{
   padding-top:25px;
   padding-bottom:40px;
