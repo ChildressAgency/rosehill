@@ -291,6 +291,28 @@ main .contact-info{
   margin-top:25px;
 }
 
+.events>.container{
+  max-width:840px;
+}
+.event{
+  margin-bottom:40px;
+}
+.event h2{
+  font-size:32px;
+  font-family:lato, sans-serif;
+  font-weight:700;
+  color:#263670;
+  margin-bottom:0;
+  border-bottom:1px solid #414d49;
+}
+.event h2>span{
+  font-style:italic;
+  font-weight:400;
+}
+.event p{
+  margin-bottom:0;
+}
+
 #footer{
   padding-top:25px;
   padding-bottom:40px;
