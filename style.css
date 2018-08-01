@@ -414,12 +414,63 @@ p.btn-centered{
 
 #safety-notice{
   background-color:#263670;
-  border-top:2px solid #000;
+  border-top:4px solid #000;
   color:#fff;
   padding-top:60px;
   padding-bottom:60px;
 }
 #safety-notice h2{
+  text-align:center;
+}
+
+.rate-section{
+  margin-top:40px;
+}
+.rate-section h2{
+  font-family:Lato, sans-serif;
+  font-size:32px;
+  color:#263670;
+  margin-bottom:0;
+}
+.rate-section h2>span{
+  font-weight:400;
+  font-style:italic;
+}
+.rate-section hr{
+  border-color:#414d49;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.rate-section p{
+  margin-bottom:0;
+}
+.call-out-section{
+  background-color:#f8fbf5;
+  margin-top:40px;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+
+#contact-book{
+  background-color:#263670;
+  color:#fff;
+  text-align:center;
+  padding-top:40px;
+  padding-bottom:20px;
+}
+#contact-book .book-section-phone{
+  color:#fff;
+}
+
+#guides-dogs{
+  background-image:url(images/textured-background.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding-top:40px;
+  padding-bottom:40px;
+  border-top:4px solid #000;
+}
+#guides-dogs h2{
   text-align:center;
 }
 
@@ -481,6 +532,11 @@ p.btn-centered{
   }
   .book-section-phone{
     font-size:38px;
+  }
+}
+@media (min-width:768px){
+  .call-out-section{
+    padding-left:60px;
   }
 }
 @media (max-width: 1199px) {
