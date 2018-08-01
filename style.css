@@ -36,26 +36,47 @@ h2{
   text-decoration:none;
 }
 
+img.alignnone,
+.wp-caption.alignnone img,
 img.aligncenter,
-img.alignnone{
+.wp-caption.aligncenter img,
+img.alignleft,
+.wp-caption.alignleft img,
+img.alignright,
+.wp-caption.alignright img{
   display:block;
   max-width:100%;
   height:auto;
+}
+
+img.alignnone,
+.wp-caption.alignnone img{
   margin:25px 0px;
+}
+img.aligncenter,
+.wp-caption.aligncenter img{
+  margin:25px auto;
 }
 img.alignright{
   float:right;
-  display:block;
-  max-width:100%;
-  height:auto;
+  margin:25px 0px 25px 25px;
+}
+.wp-caption.alignright{
+  float:right;
   margin:25px 0px 25px 25px;
 }
 img.alignleft{
   float:left;
-  display:block;
-  max-width:100%;
-  height:auto;
   margin:25px 25px 25px 0px;
+}
+.wp-caption.alignleft{
+  float:left;
+  margin:25px 25px 25px 0px;
+}
+.wp-caption p{
+  font-size:14px;
+  font-style:italic;
+  text-align:center;
 }
 
 #header-nav{
@@ -355,13 +376,13 @@ main .contact-info{
   margin-top:60px;
   padding-bottom:60px;
 }
-.eras .tab-pane{
+.tab-pane{
   padding-top:25px;
 }
-.eras .nav-tabs{
+.nav-tabs{
   border-bottom:1px solid #005e22;
 }
-.eras .nav-tabs>li>a{
+.nav-tabs>li>a{
   font-size:20px;
   color:#000;
   font-family:Cardo, serif;
@@ -372,12 +393,34 @@ main .contact-info{
   margin-right:20px;
   border-radius:0;
 }
-.eras .nav-tabs>li.active>a,
-.eras .nav-tabs>li.active>a:focus,
-.eras .nav-tabs>li.active>a:hover{
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover{
   border:1px solid #005e22;
   border-bottom-color:transparent;
   background-color:#fff;
+}
+
+#hunts{
+  margin-top:60px;
+  margin-bottom:60px;
+}
+
+p.btn-centered{
+  text-align:center;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+#safety-notice{
+  background-color:#263670;
+  border-top:2px solid #000;
+  color:#fff;
+  padding-top:60px;
+  padding-bottom:60px;
+}
+#safety-notice h2{
+  text-align:center;
 }
 
 #footer{
