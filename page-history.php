@@ -25,7 +25,7 @@
 
         <div class="tab-content">
           <?php $c = 0; foreach($eras as $era): ?>
-            <div class="tab-pane fade<?php if($c==0){ echo ' in active'; } ?>" id="<?php echo sanitize_title($era['title']); ?>">
+            <div class="tab-pane fade<?php if($c==0){ echo ' in active'; } ?>" id="<?php echo sanitize_title($era['era_title']); ?>">
               <?php echo $era['era_content']; ?>
             </div>
           <?php $c++; endforeach; ?>

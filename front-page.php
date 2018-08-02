@@ -35,7 +35,7 @@
               </div>
             </div>
 
-          <?php endwhile; ?>
+          <?php $a++; endwhile; ?>
         </div>
       <?php endif; ?>
     </div>

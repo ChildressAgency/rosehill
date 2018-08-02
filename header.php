@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <nav id="header-nav" class="hp-nav">
+  <nav id="header-nav"<?php if(is_front_page()){ echo ' class="hp-nav"'; } ?>>
     <div class="container-fluid">
       <div class="navbar-header">
         <a href="<?php echo home_url(); ?>" class="navbar-brand text-hide">
@@ -45,7 +45,7 @@
               <a href="<?php the_field('facebook', 'option'); ?>" class="facebook text-hide" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
             <?php endif; if(get_field('google_plus', 'option')): ?>
               <a href="<?php the_field('google_plus', 'option'); ?>" class="google-plus text-hide" target="_blank">Google+<i class="fab fa-google-plus-square"></i></a>
-            <?php endif; if(get_field('instagram', 'option')); ?>
+            <?php endif; if(get_field('instagram', 'option')): ?>
               <a href="<?php the_field('instagram', 'option'); ?>" class="instagram text-hide" target="_blank">Instagram<i class="fab fa-instagram"></i></a>
             <?php endif; ?>
           </div>
