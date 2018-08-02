@@ -24,7 +24,7 @@
 
         <div class="tab-content">
           <?php $hc=0; foreach($hunts as $hunt): ?>
-            <div class="tab-pane fade<?php if($hc==0){ echo ' in active'; } ?>" id="<?php echo sanitize_title($hunt['title']); ?>">
+            <div class="tab-pane fade<?php if($hc==0){ echo ' in active'; } ?>" id="<?php echo sanitize_title($hunt['hunt_title']); ?>">
               <?php echo $hunt['hunt_description']; ?>
             </div>
           <?php $hc++; endforeach; ?>
