@@ -269,10 +269,10 @@ function rosehill_header_fallback_menu(){ ?>
     <li<?php if(is_page('our-rates')){ echo ' class="active"'; } ?>><a href="<?php echo esc_url(home_url('our-rates')); ?>">Our Rates</a></li>
     <li<?php if(is_page('guides-dogs')){ echo ' class="active"'; } ?>><a href="<?php echo esc_url(home_url('guides-dogs')); ?>">Guides & Dogs</a></li>
     <li<?php if(is_page('history')){ echo ' class="active"'; } ?>><a href="<?php echo esc_url(home_url('history')); ?>">History</a></li>
-    <li<?php if(is_page('events')){ echo ' class="active"'; } ?>><a href="<?php echo esc_url('events')); ?>">Events</a></li>
-    <li<?php if(is_page('gallery')){ echo ' class="active"'; } ?>><a href="<?php echo esc_url('gallery')); ?>">Gallery</a></li>
-    <li<?php if(is_page('faqs')){ echo ' class="active"'; } ?>><a href="<?php echo esc_url('faqs')); ?>">Faqs</a></li>
-    <li<?php if(is_page('contact')){ echo ' class="active"'; } ?>><a href="<?php echo esc_url('contact')); ?>">Contact</a></li>
+    <li<?php if(is_page('events')){ echo ' class="active"'; } ?>><a href="<?php echo esc_url(home_url('events')); ?>">Events</a></li>
+    <li<?php if(is_page('gallery')){ echo ' class="active"'; } ?>><a href="<?php echo esc_url(home_url('gallery')); ?>">Gallery</a></li>
+    <li<?php if(is_page('faqs')){ echo ' class="active"'; } ?>><a href="<?php echo esc_url(home_url('faqs')); ?>">Faqs</a></li>
+    <li<?php if(is_page('contact')){ echo ' class="active"'; } ?>><a href="<?php echo esc_url(home_url('contact')); ?>">Contact</a></li>
   </ul>
 <?php }
 
