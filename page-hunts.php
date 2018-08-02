@@ -32,10 +32,13 @@
       </div>
       <p class="btn-centered"><a href="<?php echo esc_url(home_url('our-rates')); ?>" class="btn-main">Our Prices</a></p>
     </div>
+  
+  <?php if(get_field('safety_notice_content')): ?>
     <section id="safety-notice">
       <div class="container">
         <?php the_field('safety_notice_content'); ?>
       </div>
     </section>
+  <?php endif; ?>
   </main>
 <?php get_footer(); ?>

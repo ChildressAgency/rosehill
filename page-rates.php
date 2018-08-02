@@ -47,7 +47,7 @@
     </section>
   <?php endif; ?>
 
-  <?php if(get_field('safety_notice')): ?>
+  <?php if(get_field('safety_notice_content')): ?>
     <section id="safety-notice">
       <div class="container">
         <?php the_field('safety_notice_content'); ?>
