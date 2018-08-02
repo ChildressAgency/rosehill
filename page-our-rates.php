@@ -1,5 +1,6 @@
 <?php get_header(); ?>
   <main>
+    <div class="container">
     <?php
       if(have_posts()){
         while(have_posts()){
@@ -7,9 +8,10 @@
           the_content();
         }
       } ?>
+    </div>
 
     <?php if(have_rows('layout_type')): while(have_rows('layout_type')): the_row(); ?>
-      <?php if(get_row_layout() == 'call-out-section'): ?>
+      <?php if(get_row_layout() == 'call_out_section'): ?>
 
         <section class="call-out-section">
           <div class="container">
