@@ -50,7 +50,7 @@
             <?php endif; ?>
           </div>
           <div class="header-phone">
-            <p>Call Today: <a href="540-827-7484">540-827-7484</a></p>
+            <p>Call Today: <a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></p>
           </div>
         </div>
         <div class="clearfix"></div>
