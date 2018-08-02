@@ -183,6 +183,11 @@ img.alignleft{
   color:#1a1847;
   font-family:Cardo, serif;
   font-weight:700;
+  position:relative;
+  transform:none;
+  left:auto;
+  top:auto;
+  margin-top:25px;
 }
 
 .hp-article{
@@ -240,6 +245,8 @@ img.alignleft{
 #hp-history{
   background-image:url(images/textured-background.jpg);
   border-top:4px solid #03130d;
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 #hp-history .embed-responsive{
   max-width:560px;
