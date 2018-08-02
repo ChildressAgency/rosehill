@@ -345,10 +345,12 @@ main .contact-info{
 .events>.container{
   max-width:840px;
 }
-.event{
+.event,
+.post-summary{
   margin-bottom:40px;
 }
-.event h2{
+.event h2,
+.post-summary h2>a{
   font-size:32px;
   font-family:lato, sans-serif;
   font-weight:700;
@@ -356,11 +358,13 @@ main .contact-info{
   margin-bottom:0;
   border-bottom:1px solid #414d49;
 }
-.event h2>span{
+.event h2>span,
+.post-summary h2>a>span{
   font-style:italic;
   font-weight:400;
 }
-.event p{
+.event p,
+.post-summary p{
   margin-bottom:0;
 }
 
