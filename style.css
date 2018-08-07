@@ -79,6 +79,10 @@ img.alignleft{
   text-align:center;
 }
 
+iframe{
+  max-width:100%;
+}
+
 #header-nav{
   background-color:#f8fbf5;
   position:relative;
