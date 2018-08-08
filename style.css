@@ -539,6 +539,12 @@ p.btn-centered{
   text-decoration:underline;
 }
 
+#testimonials-carousel .carousel-caption{
+  position:relative;
+  left:0;
+  right:0;
+}
+
 
 @media (max-width:767px){
   #hp-hero.hero .hero-caption{
