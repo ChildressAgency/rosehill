@@ -31,7 +31,8 @@
                 <img src="<?php echo $activity_image['url']; ?>" class="img-responsive center-block" alt="<?php echo $activity_image['alt']; ?>" />
                 <h3><?php the_sub_field('activity_title'); ?></h3>
                 <p><?php the_sub_field('activity_description'); ?></p>
-                <a href="<?php the_sub_field('activity_link'); ?>" class="btn-main">Learn More</a>
+                <?php $activity_link = get_sub_field('activity_link'); ?>
+                <a href="<?php echo $activity_link['url']; ?>" class="btn-main"><?php echo $activity_link['title']; ?></a>
               </div>
             </div>
 
@@ -67,7 +68,7 @@
       <?php 
         $testimonials = get_field('testimonials'); 
         if($testimonials): ?>
-          <div id="testimonials-carousel" class="carousel slide" data-ride="">
+          <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <?php 
                 $tc = count($testimonials);
