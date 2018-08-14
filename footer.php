@@ -1,7 +1,7 @@
-  <div id="book-today" class="hp-article" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/hunters-walking-field.jpg); background-position:center center;">
+  <div id="book-today" class="hp-article" style="background-image:url(<?php echo get_field('book_your_hunt_section_background_image', 'option'); ?>); <?php echo get_field('book_your_hunt_section_background_image_css', 'option'); ?>">
     <div class="container">
-      <h2>Book your Hunt Today!</h2>
-      <a href="tel:<?php the_field('phone_number', 'option'); ?>" class="book-section-phone"><?php the_field('phone_number', 'option'); ?></a>
+      <h2 style="color:<?php echo get_field('book_your_hunt_section_text_color', 'option'); ?>;">Book your Hunt Today!</h2>
+      <a href="tel:<?php the_field('phone_number', 'option'); ?>" class="book-section-phone" style="color:<?php echo get_field('book_your_hunt_section_text_color', 'option'); ?>;"><?php the_field('phone_number', 'option'); ?></a>
     </div>
   </div>
 
