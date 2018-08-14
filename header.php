@@ -79,9 +79,11 @@
   <div<?php if(is_front_page()){ echo ' id="hp-hero"'; } ?> class="hero" style="background-image:url(<?php the_field('hero_image'); ?>); <?php the_field('hero_image_css'); ?>">
     <div class="container">
       <div class="hero-caption">
-        <?php if(is_front_page()): ?>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/guns-dog-pheasant.png" class="img-responsive center-block" alt="Guns, Dog, Pheasant" />
-        <?php endif; ?>
+        <?php if(is_front_page()):
+          if(get_field('hero_caption_image')): 
+            $hero_caption_image = get_field('hero_caption_image'); ?>
+            <img src="<?php echo $hero_caption_image['url']; ?>" class="img-responsive center-block" alt="<?php echo $hero_caption_image['alt']; ?>" />
+        <?php endif; endif; ?>
         <h1><?php echo get_field('hero_caption') ? get_field('hero_caption') : get_the_title(); ?></h1>
       </div>
     </div>
